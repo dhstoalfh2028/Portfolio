@@ -405,6 +405,11 @@ body {
     background-image: url(../img/lush_main_texture_gradation_final.jpg);
     background-size: cover;
 }
+.brand>.con4 {
+    background-image: url(../img/그린날\ 상세.JPG);
+    background-size: cover;
+    background-position-x: 50%;
+}
 .brand>div>div>a {
     position: relative;
     display: block;
