@@ -52,21 +52,21 @@ section {
 }
 
 .mypic {
-    width: 300px;
+    width: 400px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 .mypic>.pic {
     width: 100%;
-    height: 380px;
+    height: 500px;
     margin-bottom: 30px;
     overflow: hidden;
 }
 .mypic>.pic>img {
-    height: 100%;
+    width: 140%;
     position: relative;
-    left: -50px;
+    left: -100px;
 }
 .mypic h1 {
     color: orangered;
