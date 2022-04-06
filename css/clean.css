@@ -1,0 +1,16 @@
+/* nor */
+* {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ddd;
+}
+/*body*/
+body {
+    width: 1000px;
+}
+body>.con {
+    width: 100%;
+}
+img {
+    width: 100%;
+}
