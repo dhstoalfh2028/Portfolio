@@ -411,14 +411,12 @@ body {
     background-position-x: 50%;
 }
 .brand>.con5 {
-    background-image: url(../img/Artboard_whole.png);
+    background-image: url(../img/Artboard\ 2.png);
     background-size: cover;
-    background-position-y: 36%;
 }
 .brand>.con6 {
-    background-image: url(../img/basictone_clean.png);
+    background-image: url(../img/basictone_clean_1.png);
     background-size: cover;
-    background-position-y: 10.4%;
 }
 .brand>div>div>a {
     position: relative;
