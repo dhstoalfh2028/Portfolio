@@ -1,0 +1,174 @@
+/* nor */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* lib */
+.after::after {
+    clear: both;
+    display: block;
+    float: left;
+}
+
+/* body */
+body {
+    background-color: #EFEFEF;
+}
+/* main */
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.txt {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.txt>h1 {
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+.mainmenu li a {
+    font-size: 20px;
+    display: block;
+    padding-bottom: 10px;
+    transition: 0.5s;
+
+}
+.mainmenu li a:hover {
+    color: #004DC0;
+    transition: 0.5s;
+}
+.aboutme a:before {
+    content: '';
+    border-bottom: 1px solid orangered;
+    position: absolute;
+    bottom: 45px;
+    width: 0;
+}
+.aboutme a:before {left: 0;}
+.aboutme a:hover:before {
+    width: 100%;
+}
+.aboutme a:before {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.myworks a:before {
+    content: '';
+    border-bottom: 1px solid orangered;
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+}
+.myworks a:before {left: 0;}
+.myworks a:hover:before {
+    width: 100%;
+}
+.myworks a:before {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.visual {
+    width: 560px;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+.visual>img {
+    width: 100%;
+    height: 790px;
+    transition: 0.5s;
+    animation: fadeOut 5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+/* .visual>img:hover .welcome{
+    display: block;
+} */
+.welcome {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,50%);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Cutive Mono', monospace;
+    align-items: center;
+    /* display: none; */
+
+    width: 42ch;
+    animation: typing 5s steps(42), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid orangered;
+    transition: 0.5s;
+}
+.welcome:hover {
+    color: orangered;
+    border-right: 3px solid #004DC0;
+    transition: 0.5s;
+}
+.welcome:hover span {
+    opacity: 1;
+    transition: 0.5s;
+}
+.welcome span {
+    opacity: 0;
+    color: #004DC0;
+    transition: 0.5s;
+}
+@keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .contact a {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      font-size: 24px;
+  }
+  .contact a:hover {
+      color: #004DC0;
+      transition: 0.5s;
+  }

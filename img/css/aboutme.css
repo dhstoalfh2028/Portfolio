@@ -1,0 +1,166 @@
+/* nor */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* lib */
+.after::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+/* body */
+body {
+    background-color: #EFEFEF;
+    overflow: hidden;
+}
+
+/* section */
+section {
+    max-width: 1260px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+:root {
+    --animate-duration: 2s;
+  }
+
+.logo {
+    position: absolute;
+    left: 15%;
+    top: 50px;
+}
+.logo>img {
+    width: 580px;
+    position: absolute;
+    z-index: 5;
+}
+
+.mypic {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mypic>.pic {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.mypic>.pic>img {
+    width: 140%;
+    position: relative;
+    left: -100px;
+}
+.mypic h1 {
+    color: orangered;
+    font-size: 28px;
+}
+
+.content {
+    width:800px ;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content>div {
+    border-bottom: 1px solid #777;
+    padding: 20px 0;
+    width: 100%;
+}
+.content>.box1 {
+    padding-top: 0;
+}
+.content h1,p {
+    height: 25px;
+    line-height: 25px;
+}
+.box1>h1 {
+    width: 20%;
+    float: left;
+    font-size: 22px;
+}
+.box1>p {
+    width: 80%;
+    float: left;
+    font-size: 20px;
+    
+}
+
+.box2>.txt {
+    width: 100%;
+}
+.box2>.txt div {
+    width: 50%;
+    float: left;
+}
+.box2>h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.box2 p {
+    font-size: 18px;
+}
+.box2>.txt>.right>p {
+    text-align: right;
+}
+
+.box3>.txt {
+    width: 100%;
+}
+.box3>.txt div {
+    width: 50%;
+    float: left;
+}
+.box3>h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.box3 p {
+    font-size: 18px;
+}
+.box3>.txt>.right>p {
+    text-align: right;
+}
+
+
+.content>.box4 {
+    border-bottom: none;
+    padding-bottom: none;
+}
+.box4>.txt {
+    width: 100%;
+    position: relative;
+}
+.box4>.txt>img {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 620px;
+}
+.box4>h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.box4 h2 {
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+}
