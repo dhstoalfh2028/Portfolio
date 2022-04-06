@@ -1,0 +1,443 @@
+/* nor */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+/* lib */
+.after::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* body */
+body {
+    background-color: #EFEFEF;
+}
+
+/* menu */
+.menu {
+    max-width: 1920px;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 10;
+}
+.mainmenu {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
+.mainmenu>li {
+    float: left;
+    width: 33.3333%;
+    height:100%;
+}
+.mainmenu>li>a {
+    display: block;
+    padding-top:38px;
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    height: 100%;
+    font-weight: 500;
+    font-size: 20px;
+}
+.mainmenu>li>a:hover {
+    color: orangered;
+    border-bottom: 4px solid orangered;
+}
+
+/* content */
+.content {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* menu-div */
+.menu_div {
+    width: 100%;
+    padding-top: 80px;
+    height: 100vh;
+}
+.menu_div>div {
+    width: 29.3%;
+    height: 500px;
+    position: relative;
+    float: left;
+    margin-right: 5% ;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.menu_div>.box2 {
+    top: 35%;
+}
+.menu_div>div:last-child {
+    margin-right: 1%;
+}
+.menu_div>div:first-child {
+    margin-left: 1%;
+}
+
+
+
+
+.vector70 {
+    position: absolute;
+    width: 0px;
+    height: 187px;
+    left: 29px;
+    top: 134px;
+    border: 0.25px solid #004DC0;
+}
+.menu_div>div>.number {
+    position: absolute;
+    color: #FF7A00;
+    font-family: 'Rock Salt', cursive;
+    font-size: 54px;
+    font-weight: 500;
+    top: -67px;
+    left: 23px;
+    transition: 0.5s;
+}
+.menu_div>div:hover .number {
+   color: #FF3D00;
+   transition: 0.5s;
+}
+.menu_div>div>.rotate {
+    color: #004DC0;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -10px;
+    top: 76px;
+    font-size: 14px;
+}
+.menu_div>.box2>.rotate {
+    left: 1px;
+}
+.menu_div>.box2>.vector70 {
+    height: 198px;
+    top: 123px;
+}
+.menu_div>.box3>.rotate {
+    left: 7px;
+}
+.menu_div>.box3>.vector70 {
+    height: 201px;
+    top: 120px;
+}
+.menu_div>div>.img {
+    width: 320px;
+    height: 320px;
+    background-color: #444;
+    float: right;
+}
+
+.menu_div>.box1>.img {
+    background-image: url(../img/menu_01.jpg);
+    background-size: cover;
+}
+.menu_div>.box2>.img {
+    background-image: url(../imG/midnignt.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+}
+.menu_div>.box3>.img {
+    background-image: url(../img/BENES\ mockup.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+}
+.menu_div>div>.text {
+    margin-top: 10px;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #004DC0;
+    float: right;
+}
+.menu_div>div>.text>.title {
+    color: #004DC0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    padding-top: 5px;
+}
+.menu_div>div>.list {
+    width: 340px;
+    margin-top: 20px;
+    float: right;
+}
+.menu_div>div>.list>h3 {
+    color: #FF7A00;
+    font-weight: 400;
+}
+.menu_div>.box2>.list>h3 {
+    color: #FF7A00;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.menu_div>div>.list>p {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+
+
+/*  web */
+.web {
+    height: 100vh;
+    width: 100%;
+    padding-top: 80px;
+}
+.web>div {
+    width: 49%;
+    margin-right: 2%;
+    height: 600px;
+    float: left;
+    background-color: black;
+    position: relative;
+    margin-top: 100px;
+}
+.web>div:last-child {
+    margin-right: 0;
+}
+.web>.con1 {
+    background-image: url(../img/blacklips.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    overflow: hidden;
+}
+.web>.con1>.con1-1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: -100%;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.web>.con1>.con1-1>a {
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 300;
+}
+.web>.con1>.con1-1>a>p {
+    text-align: center;
+    line-height: 300px;
+}
+.web>.con1:hover .con1-1 {
+    left: 0%;
+    transition: 0.5s;
+}
+.web>.con2 {
+    background-image: url(../img/plusx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    overflow: hidden;
+}
+.web>.con2>.con2-1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 100%;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.web>.con2>.con2-1>a {
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 300;
+}
+.web>.con2>.con2-1>a>p {
+    text-align: center;
+    line-height: 300px;
+}
+.web>.con2:hover .con2-1 {
+    left: 0%;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+/* graphic */
+.graphic {
+    padding-top: 80px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.graphic>div {
+    float: left;
+    margin-top: 100px;
+    position: relative;
+}
+.graphic>.con1 {
+    width: 40%;
+    margin-right: 10%;
+}
+.graphic>.con1>p {
+    transform: rotateZ(90deg);
+    position: absolute;
+    top: 70px;
+    font-size: 15px;
+    right: -30px;
+}
+.graphic>.con2 {
+    width:50%;
+    text-align: right;
+}
+.graphic>.con2>p {
+    transform: rotateZ(-90deg);
+    position: absolute;
+    left: 15px;
+    bottom: 50px;
+    font-size: 15px;
+}
+.graphic>.con1>img {
+    width: 85%;
+}
+.graphic>.con2>img {
+    width: 85%;
+}
+.vector1 {
+    right: 50px;
+    position: absolute;
+    width: 0px;
+    height: 425px;
+    bottom: 5px;
+    border-left: 0.1px solid #000000;
+    transform: rotate(0.14deg);
+}
+.vector2 {
+   left: 65px;
+    position: absolute;
+    width: 0px;
+    height: 625px;
+    top: 0px;
+    border-left: 0.1px solid #000000;
+    transform: rotate(0.14deg);
+}
+.graphic>.con3 {
+    width: 100%;
+    text-align: right;
+}
+.graphic>.con3>img {
+    width: 100%;
+}
+.graphic>.midnight {
+    width: 500px;
+    position: absolute;
+    top: 840px;
+    left: -40px;
+}
+.graphic>.midnight>img {
+    width: 100%;
+}
+
+/* brand */
+.brand {
+    padding-top: 180px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.brand>div {
+    float: left;
+    width: 30.65%;
+    margin-bottom: 50px;
+    height: 350px;
+    margin-right: 4%;
+}
+.brand div:nth-child(4) {
+    margin-right: 0;
+}
+.brand div:nth-child(7) {
+    margin-right: 0;
+}
+.brand div:nth-child(10) {
+    margin-right: 0;
+}
+.brand div div {
+    width: 100%;
+    height: 100%;
+}
+.brand>.con1 {
+    background-image: url(../img/BENES\ mockup.jpg);
+    background-size: cover;
+}
+.brand>.con2 {
+    background-image: url(../img/그린날\ mockup.jpg);
+    background-size: cover;
+}
+.brand>.con3 {
+    background-image: url(../img/lush_main_texture_gradation_final.jpg);
+    background-size: cover;
+}
+.brand>.con4 {
+    background-image: url(../img/그린날\ 상세.JPG);
+    background-size: cover;
+    background-position-x: 50%;
+}
+.brand>.con5 {
+    background-image: url(../img/Artboard\ 2.png);
+    background-size: cover;
+}
+.brand>.con6 {
+    background-image: url(../img/basictone_clean_1.png);
+    background-size: cover;
+}
+.brand>div>div>a {
+    position: relative;
+    display: block;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+   padding: 30px;
+   color: #444;
+   font-size: 45px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.brand>div>div:hover a {
+    opacity: 1;
+    transition: 0.5s;
+}
+.brand>div>div>a>p {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+}
